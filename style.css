@@ -1,0 +1,127 @@
+:root {
+    --body-bg: hsl(330, 83%, 82%);
+    --con-bg: hsl(0, 0%, 100%);
+    --head-bold: hsl(15, 49%, 19%);
+    --pre: hsl(332, 52%, 33%);
+    --ing-ins: hsl(33, 92%, 30%);
+    --parag: hsl(32, 11%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --parag-txt: 1rem;
+    --ing-ins-txt: 2rem;
+    --pre-txt: 2rem;
+    --uni-pad: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem 0;
+    background-color: var(--body-bg);
+}
+
+.container {
+    max-width: 40rem;
+    max-height: 100%;
+    background-color: var(--con-bg);
+    padding: var(--uni-pad);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.food_img {
+    width: 100%;
+    border-radius: 8px;
+}
+.heading {
+    counter-reset: var(--head-bold);
+    font-size: 2.4rem;
+}
+.detail {
+    font-size: var(--parag-txt);
+    color: var(--parag);
+}
+
+.preparation_time {
+    background-color: hsl(330, 100%, 90%);
+    color: var(--pre);
+    font-size: 1.2rem;
+    font-weight: 700;
+    list-style-type: disc;
+    padding: var(--uni-pad);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+li {
+    font-size: var(--parag-txt);
+    color: var(--parag);
+    font-weight: 400;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    list-style-position: inside;
+}
+li::marker {
+    color: var(--ing-ins);
+    font-size: .8rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+li .bold {
+    color: var(--head-bold);
+    font-weight: 600;
+}
+.ingredients, 
+.instructions, 
+.nutrients {
+    font-size: var(--ing-ins-txt);
+    font-weight: 700;
+    color: var(--ing-ins);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.instructions, 
+.nutrients {
+    border-top: 1px solid var(--parag);
+    padding-top: 1rem;
+}
+.ingredients li {
+    list-style-type: square;
+}
+.nutrients p {
+font-size: var(--parag-txt);
+color: var(--parag);
+font-weight: 400;
+}
+.nutrient,
+.nutrient_value {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--parag);
+    padding: 0.3rem 0;
+    border-bottom: 1px solid grey;
+}
+.nutrient_value {
+    color: var(--ing-ins);
+    font-size: 1.1rem;
+}
+.nutrient_value:first-child {
+    border-top: none;
+}
+.nutrient {
+    padding-left: 2rem;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
