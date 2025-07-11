@@ -95,6 +95,13 @@ li .bold {
     border-top: 1px solid var(--parag);
     padding-top: 1rem;
 }
+.instructions ol {
+    padding-left: 1.5rem;
+}
+.instructions li {
+    list-style-position: outside;
+    padding-left: 1rem;
+}
 .ingredients li {
     list-style-type: square;
 }
