@@ -5,19 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Recipe page | Challenge</title>
 </head>
+
 <body>
   <main class="container">
-    <h1 class="heading">Simple Omelette Recipe</h1>
     <img class="food_img" src="./assets/images/image-omelette.jpeg" alt="Image">
+    <h1 class="heading">Simple Omelette Recipe</h1>
     <p class="detail">
       An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.
@@ -26,9 +22,9 @@
     <div class="preparation_time">
       Preparation Time
       <ul>
-        <li><b>Total:</b> Approximately 10 minutes</li>
-        <li><b>Preparation:</b> 5 minutes</li>
-        <li><b>Cooking:</b> 5 minutes</li>
+        <li><b class="bold">Total:</b> Approximately 10 minutes</li>
+        <li><b class="bold">Preparation:</b> 5 minutes</li>
+        <li><b class="bold">Cooking:</b> 5 minutes</li>
       </ul>
     </div>
 
@@ -45,50 +41,50 @@
 
     <div class="instructions">
       Instructions
-      <ul>
-        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.</li>
-        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.</li>
-        <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
-      </ul>
+      <ol>
+        <li><b class="bold">Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><b class="bold">Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><b class="bold">Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.</li>
+        <li><b class="bold">Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+      middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><b class="bold">Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><b class="bold">Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+      </ol>
     </div>
 
     <div class="nutrients">
+      Nutrition
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
       <table>
-        Nutrition
-        <p>The table below shows nutritional values per serving without the additional fillings.</p>
-        <tr>
-          <td>Calories</td>
-          <td>277kcal</td>
+        <tr class="table_row">
+          <td class="nutrient">Calories</td>
+          <td class="nutrient_value">277kcal</td>
         </tr>
-        <tr>
-          <td>Carbs</td>
-          <td>0g</td>
+        <tr class="table_row">
+          <td class="nutrient">Carbs</td>
+          <td class="nutrient_value">0g</td>
         </tr>
-        <tr>
-          <td>Protein</td>
-          <td>20g</td>
+        <tr class="table_row">
+          <td class="nutrient">Protein</td>
+          <td class="nutrient_value">20g</td>
         </tr>
-        <tr>
-          <td>Fat</td>
-          <td>22g</td>
+        <tr class="table_row">
+          <td class="nutrient">Fat</td>
+          <td class="nutrient_value">22g</td>
         </tr>
       </table>
     </div>
   </main>
-
-  
-
-  
+  <footer class="footer">
+    <p>© 2023 Simple Omelette Recipe. All rights reserved.</p>
+  </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Nayaya-30/Recipe-Page.git" target="_blank">Usouff</a>.
   </div>
 </body>
 </html>
