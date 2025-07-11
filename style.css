@@ -115,13 +115,14 @@ font-weight: 400;
     color: var(--ing-ins);
     font-size: 1.1rem;
 }
-.nutrient_value:first-child {
-    border-top: none;
-}
 .nutrient {
     padding-left: 2rem;
 }
 table {
     border-collapse: separate;
     border-spacing: 0 0.5rem;
+}
+p,
+li {
+    line-height: 1.5;
 }
